@@ -1,2 +1,2 @@
-from .greet import greet
+from . import greet, cast
 from . import stat
