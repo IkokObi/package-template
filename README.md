@@ -5,8 +5,8 @@ This repository can be used as a template for Python packages!
 
 ## How to install
 ```bash
-$ git clone https://github.com/IkokObi/package_template.git
-$ pip install package_template/
+$ git clone https://github.com/IkokObi/package-template.git
+$ pip install package-template/
 ```
 
 ## How to use
