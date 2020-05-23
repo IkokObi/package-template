@@ -19,6 +19,7 @@ class StatAnalyzer(object):
         n-dimensional list or array-like object are available.
         This data will be passed to numpy.array()
     """
+
     def __init__(self, data):
         self.data = np.array(data)
 

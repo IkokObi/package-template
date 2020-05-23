@@ -13,6 +13,6 @@ def stat_analysis(data):
     """ Calculate statistics """
     analyzer = stat.StatAnalyzer(data=data)
     result = {}
-    result['mean'] = analyzer.mean(axis=0)
-    result['std'] = analyzer.std(axis=0)
+    result["mean"] = analyzer.mean(axis=0)
+    result["std"] = analyzer.std(axis=0)
     return result

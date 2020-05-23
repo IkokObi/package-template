@@ -7,6 +7,7 @@ Last Change: 2019/03/30 13:52:48 JST.
 @author: Koki Obinata
 """
 from unittest import TestCase
+
 from package_template.stat import stat
 
 
@@ -25,7 +26,8 @@ class TestStat(TestCase):
         case2 = stat.StatAnalyzer([1.5, 2.1, 3])
         case3 = stat.StatAnalyzer([[1.5, 0.5], [2.0, 1.5], [3, 4.0]])
 
-        self.assertAlmostEqual(case1.std(), (2/3)**0.5, places=7)
-        self.assertAlmostEqual(case2.std(), (1.14/3)**0.5, places=7)
+        self.assertAlmostEqual(case1.std(), (2 / 3) ** 0.5, places=7)
+        self.assertAlmostEqual(case2.std(), (1.14 / 3) ** 0.5, places=7)
         self.assertAlmostEqual(
-                case3.std(axis=0).tolist()[1], (6.5/3)**0.5, places=7)
+            case3.std(axis=0).tolist()[1], (6.5 / 3) ** 0.5, places=7
+        )

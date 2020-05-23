@@ -9,11 +9,13 @@ Last Change: 2019/03/30 13:01:42 JST.
 import textwrap
 
 
-def greet(name='NoName'):
+def greet(name="NoName"):
     description = """\
     Hello {}!
     I'm Koki Obinata.
     This repository is template for Python package.
     Have a great project!\
-    """.format(name)
+    """.format(
+        name
+    )
     print(textwrap.dedent(description))
