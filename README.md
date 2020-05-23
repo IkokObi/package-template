@@ -30,3 +30,14 @@ This repository is template for Python package.
 Have a great project!  
 """
 ```
+
+## Lint and format
+### Lint
+```
+$ flake8 .
+```
+
+### Format
+```
+$ isort -y; black ./
+```
